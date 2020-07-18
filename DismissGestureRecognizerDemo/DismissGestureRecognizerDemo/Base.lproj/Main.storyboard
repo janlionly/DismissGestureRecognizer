@@ -42,7 +42,22 @@
                     <view key="view" contentMode="scaleToFill" id="vpL-5u-cqx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAk-Gs-196">
+                                <rect key="frame" x="189.5" y="126" width="35" height="30"/>
+                                <state key="normal" title="Push">
+                                    <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="IjW-0U-6gT" kind="show" id="k8r-sB-9pN"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UAk-Gs-196" firstAttribute="centerX" secondItem="vpL-5u-cqx" secondAttribute="centerX" id="5Pr-KS-kon"/>
+                            <constraint firstItem="UAk-Gs-196" firstAttribute="top" secondItem="utT-3v-WEK" secondAttribute="top" constant="38" id="KGB-6H-g6z"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="utT-3v-WEK"/>
                     </view>
                     <navigationItem key="navigationItem" id="90H-ne-gcE"/>
@@ -50,6 +65,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hbr-yy-vuO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1784.057971014493" y="142.63392857142856"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="DdG-v5-xSM">
+            <objects>
+                <viewController id="IjW-0U-6gT" customClass="ThirdViewController" customModule="DismissGestureRecognizerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WRC-XT-95N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="JxF-e6-U5D"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="teV-w8-VL5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YmI-61-THi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2510" y="143"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GzO-hh-xRU">
