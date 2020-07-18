@@ -65,8 +65,8 @@ extension UIViewController: PropertyStoring {
     }
 
     private func addPanGesture() {
+        disableDismissTypeGesture()
         if dismissType != .disableGesture {
-            disableDismissTypeGesture()
             if (navigationController != nil && navigationController!.viewControllers.count == 1) || navigationController == nil {
                 if dismissType == .panRightForLeftEdgeScreen {
                     let screenGesture = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
