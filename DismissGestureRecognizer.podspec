@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'DismissGestureRecognizer'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Add a GestureRecognizer for Dismissing UIViewController'
  
   s.homepage         = 'https://github.com/janlionly/DismissGestureRecognizer.git'

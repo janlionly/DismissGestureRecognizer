@@ -22,10 +22,10 @@ github "janlionly/DismissGestureRecognizer"
 ```
 
 ### Swift Package Manager
-- iOS: Open Xcode, File->Swift Packages, search input **https://github.com/janlionly/DismissGestureRecognizer.git**, and then select Version Up to Next Major **1.0.0** < .
+- iOS: Open Xcode, File->Swift Packages, search input **https://github.com/janlionly/DismissGestureRecognizer.git**, and then select Version Up to Next Major **1.0.1** < .
 - Or add dependencies in your `Package.swift`:
 ```swift
-.package(url: "https://github.com/janlionly/DismissGestureRecognizer.git", .upToNextMajor(from: "1.0.0")),
+.package(url: "https://github.com/janlionly/DismissGestureRecognizer.git", .upToNextMajor(from: "1.0.1")),
 ```
 
 ## Usage
@@ -35,8 +35,8 @@ Just one line code to enable the gesture for dismissing view controller:
 ```swift
 override func viewDidLoad() {
   super.viewDidLoad()
-  // types: .swipeRightForLeftEdgeScreen, .swipeRightForFullScreen, .panRightForLeftEdgeScreen, .panRightForFullScreen
-  dismissType = .panRightForFullScreen
+  // types: .swipeRightForLeftEdgeScreen, .panRightForLeftEdgeScreen, .disableGesture
+  dismissType = .swipeRightForLeftEdgeScreen
 }
 ```
 

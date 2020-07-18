@@ -26,9 +26,9 @@ extension UIViewController: PropertyStoring {
     public enum DismissType {
         case disableGesture
         case swipeRightForLeftEdgeScreen
-        case swipeRightForFullScreen
+        // case swipeRightForFullScreen
         case panRightForLeftEdgeScreen
-        case panRightForFullScreen
+        // case panRightForFullScreen
     }
 
     private struct CustomProperties {
@@ -73,20 +73,23 @@ extension UIViewController: PropertyStoring {
                     dismissTypeGesture = screenGesture
                     screenGesture.edges = .left
                     view.addGestureRecognizer(screenGesture)
-                } else if dismissType == .panRightForFullScreen {
-                    let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
-                    dismissTypeGesture = panGesture
-                    view.addGestureRecognizer(panGesture)
-                } else if dismissType == .swipeRightForLeftEdgeScreen {
+                }
+//                else if dismissType == .panRightForFullScreen {
+//                    let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
+//                    dismissTypeGesture = panGesture
+//                    view.addGestureRecognizer(panGesture)
+//                }
+                else if dismissType == .swipeRightForLeftEdgeScreen {
                     let screenGesture = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(handleEdgePanGesture(_:)))
                     dismissTypeGesture = screenGesture
                      screenGesture.edges = .left
                      view.addGestureRecognizer(screenGesture)
-                } else if dismissType == .swipeRightForFullScreen {
-                    let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handleEdgePanGesture(_:)))
-                    dismissTypeGesture = panGesture
-                    view.addGestureRecognizer(panGesture)
                 }
+//                else if dismissType == .swipeRightForFullScreen {
+//                    let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handleEdgePanGesture(_:)))
+//                    dismissTypeGesture = panGesture
+//                    view.addGestureRecognizer(panGesture)
+//                }
             }
         }
     }
