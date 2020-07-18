@@ -1,6 +1,6 @@
 # DismissGestureRecognizer
-
 <img src="https://media.giphy.com/media/TfLAHBp7eEnJivLNGk/giphy.gif" width="250" height="541">
+
 [![Version](https://img.shields.io/cocoapods/v/DismissGestureRecognizer.svg?style=flat)](https://cocoapods.org/pods/DismissGestureRecognizer)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/DismissGestureRecognizer.svg?style=flat)](https://github.com/janlionly/DismissGestureRecognizer/blob/master/LICENSE)
